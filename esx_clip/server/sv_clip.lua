@@ -1,8 +1,4 @@
-ESX = nil
-
-TriggerEvent('esx:getSharedObject', function(obj)
-	ESX = obj
-end)
+ESX = exports["es_extended"]:getSharedObject()
 
 RegisterServerEvent('esx_clip:remove')
 AddEventHandler('esx_clip:remove', function()
